@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML, CSS, JS onclick remove</title>
+</head>
+<body>
+  <ul>
+    <li onclick="remove(this)">1</li>
+    <li onclick="remove(this)">2</li>
+    <li onclick="remove(this)">3</li>
+    <li onclick="remove(this)">4</li>
+    <li onclick="remove(this)">5</li>
+  </ul>
+
+  <script>
+    function remove(e) {
+      e.parentNode.removeChild(e);
+    }
+  </script>
+</body>
+</html>
